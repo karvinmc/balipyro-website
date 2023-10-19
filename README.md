@@ -7,5 +7,8 @@ A Website project requested by an Event Organizer.
 ## Fonts
 ...
 
-## Icons
+## Assets
+...
+
+## Images
 ...
