@@ -1,5 +1,5 @@
-# Website for an Event Organizer
-Website project requested by an Event Organizer.
+# Event Organizer Website
+A Website project requested by an Event Organizer.
 
 ## Template
 ...
