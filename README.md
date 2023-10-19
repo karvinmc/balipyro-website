@@ -1,2 +1,11 @@
-# project-website
-Website project for an Event Organizer.
+# Website for an Event Organizer
+Website project requested by an Event Organizer.
+
+## Template
+...
+
+## Fonts
+...
+
+## Icons
+...
