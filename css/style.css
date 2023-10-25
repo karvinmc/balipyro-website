@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -78,7 +79,7 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #001D38;
 }
 
@@ -488,7 +489,7 @@ h3 {
   color: #FF4533;
   display: inline-block;
   padding: 12px 44px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 400;
   border: 0;
@@ -523,7 +524,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 14px 35px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   font-weight: 500;
   border: 0;
@@ -565,7 +566,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 13px 27px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 600;
   border: 0;
@@ -611,7 +612,7 @@ h3 {
   color: #fff !important;
   display: inline-block;
   padding: 14px 47px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: 0;
@@ -654,7 +655,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 24px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 600;
   border: 0;
@@ -800,7 +801,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #FF4533;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 0;
 }
 
@@ -1137,8 +1138,8 @@ h3 {
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
   background: #FF4533;
-  font-family: "Anton", sans-serif;
-  padding: 12px 46px;
+  font-family: 'Nunito', sans-serif;
+  padding: 12px 25px;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid transparent;
@@ -1197,7 +1198,7 @@ h3 {
   font-weight: 400;
   display: inline-block;
   padding: 30px 0 30px  0;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   position: relative;
   text-transform: uppercase;
 }
@@ -1577,7 +1578,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #FF4533;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -1588,11 +1589,12 @@ h3 {
 }
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+/* Home page title */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Monoton", cursive;
+  font-family: 'Barlow', sans-serif;
   font-size: 122px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 900;
   color: #fff;
   line-height: 1;
   margin-top: 55px;
@@ -1623,13 +1625,14 @@ h3 {
 }
 
 /* line 86, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+/* Home page subtitle */
 .slider_area .single_slider .slider_text p {
   font-size: 30px;
   font-weight: 400;
   color: #FFF;
   margin-bottom: 34px;
   margin-top: 10px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2006,7 +2009,7 @@ h3 {
 
 /* line 48, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area .about_info h4 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #FF4533;
@@ -2129,12 +2132,12 @@ h3 {
   font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
 .bradcam_area .single_bradcam .bradcam_text h3 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 80px;
   text-transform: capitalize;
   font-weight: 400;
@@ -2142,7 +2145,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Monoton", cursive;
+  font-family: 'Barlow', sans-serif;
   position: relative;
   z-index: 9;
 }
@@ -2181,7 +2184,7 @@ h3 {
   color: #FFF;
   margin-bottom: 34px;
   margin-top: 10px;
-  font-family: "Monoton", cursive;
+  font-family: 'Barlow', sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2259,7 +2262,7 @@ h3 {
 /* line 30, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading h4 {
   font-size: 30px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #fff;
   font-weight: 400;
   margin-bottom: 14px;
@@ -2527,7 +2530,7 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram .porgram_top span {
   color: #FF4533;
   font-size: 30px;
-  font-family: "Anton", sans-serif;
+  font-family: 'Nunito', sans-serif;
   display: block;
   margin-bottom: 8px;
 }
