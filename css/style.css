@@ -2662,7 +2662,8 @@ h3 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #F5F5F5;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* line 30, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
@@ -2672,7 +2673,8 @@ h3 {
 
 /* line 36, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #f04b4b;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*=================== contact banner end ====================*/
@@ -2771,6 +2773,7 @@ h3 {
 /* line 133, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .contact-section {
   padding: 130px 0 100px;
+  background-color: #333333;
 }
 
 @media (max-width: 991px) {
