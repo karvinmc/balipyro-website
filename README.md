@@ -7,6 +7,24 @@ A Website project requested by an Event Organizer.
 - Black - `#333333`  
 - Red - `#E81828`  
 
+### Other Color Template
+_Add other colors here_
+
+### Branch Naming Convention
+
+| Category Word | Meaning |
+| --- | --- |
+| `hotfix` | for quickly fixing critical issues, usually with a temporary solution |
+| `bugfix` | for fixing a bug |
+| `feature` | for adding, removing or modifying a feature |
+| `test` | for experimenting something which is not an issue |
+| `wip` | for a work in progress |
+
+Branch Naming Format:
+```
+author-category-name
+```
+
 ## Fonts
 - [Barlow](https://fonts.google.com/specimen/Barlow?query=Barlow)  
 - [Nunito](https://fonts.google.com/specimen/Nunito?query=Nunito)   
