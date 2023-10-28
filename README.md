@@ -3,8 +3,10 @@ A Website project requested by an Event Organizer.
 
 ## Template
 ### Main Color Template
-- White - `#F5F5F5` (HEX)  
-- Black - `#333333`  
+- White - `#F5F5F5` (HEX)
+- Black - `#0f0f0f`
+- Darker Grey - `#2d2d2d`
+- Dark Grey - `#333333`  
 - Red - `#E81828`  
 
 ### Other Color Template
