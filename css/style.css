@@ -2592,6 +2592,13 @@ h3 {
   margin-bottom: 24px;
 }
 
+.footer .footer_top .footer_widget img {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FF4533;
+  margin-bottom: 24px;
+}
+
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
   font-size: 30px;
