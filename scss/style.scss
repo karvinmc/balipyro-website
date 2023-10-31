@@ -8,7 +8,10 @@ $dark-grey: #333333;
 $red: #e81828;
 
 // Darken primary colors
-$darken-red: darken($color: #e81828, $amount: 10);
+$darken-red: darken(
+	$color: #e81828,
+	$amount: 10,
+);
 
 .w-100 {
 	height: 100vh;
@@ -105,7 +108,7 @@ $darken-red: darken($color: #e81828, $amount: 10);
 	.about-title {
 		h2 {
 			font-family: "Barlow", sans-serif;
-			font-size: 48px;
+			font-size: 40px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
@@ -114,7 +117,7 @@ $darken-red: darken($color: #e81828, $amount: 10);
 	.about-slogan {
 		h5 {
 			font-family: "Barlow", sans-serif;
-			font-size: 35px;
+			font-size: 32px;
 			font-style: italic;
 			letter-spacing: 2px;
 		}
@@ -124,7 +127,9 @@ $darken-red: darken($color: #e81828, $amount: 10);
 		p {
 			font-size: 22px;
 		}
+	}
 
+	.about-btn {
 		a {
 			font-size: 20px;
 			text-transform: uppercase;
@@ -132,6 +137,7 @@ $darken-red: darken($color: #e81828, $amount: 10);
 			padding: 12px;
 			background-color: $red;
 			border-color: $red;
+			font-weight: bold;
 		}
 
 		a:hover {
@@ -141,67 +147,105 @@ $darken-red: darken($color: #e81828, $amount: 10);
 
 	.about-logo {
 		img {
-			width: 450px;
+			width: 365px;
 			height: auto;
-			margin-left: 50px;
+		}
+	}
+}
+
+.services-area {
+	font-family: "Nunito", sans-serif;
+
+	.services-title {
+		h2 {
+			font-family: "Barlow", sans-serif;
+			font-size: 40px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+
+	.services-label {
+		h5 {
+			font-size: 25px;
+		}
+	}
+
+	.services-btn {
+		a {
+			font-size: 20px;
+			text-transform: uppercase;
+			border-radius: 1px;
+			padding: 12px;
+			padding-left: 50px;
+			padding-right: 50px;
+			background-color: $red;
+			border-color: $red;
+			font-weight: bold;
+		}
+
+		a:hover {
+			background-color: $darken-red;
 		}
 	}
 }
 
 .footer-area {
-    font-family: "Nunito", sans-serif;
+	font-family: "Nunito", sans-serif;
 
-    a {
-        img {
-            width: 250px;
-            height: auto;
-        }
-    }
+	a {
+		img {
+			width: 250px;
+			height: auto;
+		}
+	}
 
-    .footer-label {
-        font-family: "Barlow", sans-serif;
+	.footer-label {
+		font-family: "Barlow", sans-serif;
 		font-size: 18px;
-	    font-weight: 900;
-        text-transform: uppercase;
+		font-weight: 900;
+		text-transform: uppercase;
 		letter-spacing: 2px;
-        margin-bottom: 23px;
-    }
+		margin-bottom: 23px;
+	}
 
-    .list-inline-item {
-        i {
-            font-size: 27px;
-            margin-left: -5px;
-            margin-right: -2px;
-        }
-    }
+	.list-inline-item {
+		i {
+			font-size: 27px;
+			margin-left: -5px;
+			margin-right: -2px;
+		}
+	}
 
-    .nav-item:hover {
-        background-color: yellow;
-        color: $red;
-    }
+	.nav-item:hover {
+		background-color: yellow;
+		color: $red;
+	}
 
-    .footer-nav {
-        a {
-            color: $white;
-            text-decoration: none;
-        }
+	.footer-nav {
+		a {
+			color: $white;
+			text-decoration: none;
+		}
 
-        a:hover {
-            color: $red;
-        }
-    }
+		a:hover {
+			color: $red;
+		}
+	}
 }
 
+// sm
 @media only screen and (max-width: 576px) {
-    .footer-area {
-        .footer-contact {
-            .col-10 {
-                text-align: justify;
-            }
-        }
-    }
+	.footer-area {
+		.footer-contact {
+			.col-10 {
+				text-align: justify;
+			}
+		}
+	}
 }
 
+// lg
 @media only screen and (max-width: 992px) {
 	.header-area {
 		.navbar {
@@ -229,34 +273,69 @@ $darken-red: darken($color: #e81828, $amount: 10);
 		}
 	}
 
-    .footer-area {
-        .footer-brand {
-            text-align: center;
-        }
+	.about-area {
+		.about-title, .about-slogan, .about-content, .about-btn {
+			text-align: center;
+			h2, h5, p {
+				text-align: center;
+			}
+		}
 
-        .footer-sitemap {
-            text-align: center;
-        }
+		.about-title {
+			h2 {
+				font-size: 35px;
+			}
+		}
 
-        .footer-contact {
-            .footer-label, .col-2 {
-                text-align: center;
-            }
-        }
+		.about-slogan {
+			h5 {
+				font-size: 24px;
+			}
+		}
 
-        .footer-logo {
-            img {
-                width: 160px;
-                height: auto;
-            }
-        }
+		.about-content {
+			p {
+				font-size: 18px;
+			}
+		}
 
-        .list-inline-item {
-            margin-right: -5px;
-        }
-    }
+		.about-logo {
+			img {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.footer-area {
+		.footer-brand {
+			text-align: center;
+		}
+
+		.footer-sitemap {
+			text-align: center;
+		}
+
+		.footer-contact {
+			.footer-label,
+			.col-2 {
+				text-align: center;
+			}
+		}
+
+		.footer-logo {
+			img {
+				width: 160px;
+				height: auto;
+			}
+		}
+
+		.list-inline-item {
+			margin-right: -5px;
+		}
+	}
 }
 
+// xl
 @media only screen and (max-width: 1200px) {
 	.header-area {
 		.navbar {
@@ -276,6 +355,15 @@ $darken-red: darken($color: #e81828, $amount: 10);
 
 		.nav-item {
 			margin-right: 15px;
+		}
+	}
+
+	.about-area {
+		.about-logo {
+			img {
+				width: 300px;
+				height: auto;
+			}
 		}
 	}
 }

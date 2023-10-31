@@ -81,34 +81,61 @@
 }
 .about-area .about-title h2 {
   font-family: "Barlow", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .about-area .about-slogan h5 {
   font-family: "Barlow", sans-serif;
-  font-size: 35px;
+  font-size: 32px;
   font-style: italic;
   letter-spacing: 2px;
 }
 .about-area .about-content p {
   font-size: 22px;
 }
-.about-area .about-content a {
+.about-area .about-btn a {
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 1px;
   padding: 12px;
   background-color: #e81828;
   border-color: #e81828;
+  font-weight: bold;
 }
-.about-area .about-content a:hover {
+.about-area .about-btn a:hover {
   background-color: #ba131f;
 }
 .about-area .about-logo img {
-  width: 450px;
+  width: 365px;
   height: auto;
-  margin-left: 50px;
+}
+
+.services-area {
+  font-family: "Nunito", sans-serif;
+}
+.services-area .services-title h2 {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.services-area .services-label h5 {
+  font-size: 25px;
+}
+.services-area .services-btn a {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 1px;
+  padding: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #e81828;
+  border-color: #e81828;
+  font-weight: bold;
+}
+.services-area .services-btn a:hover {
+  background-color: #ba131f;
 }
 
 .footer-area {
@@ -161,13 +188,32 @@
   .slider-area .carousel-caption h2 {
     font-size: 43px;
   }
+  .about-area .about-title, .about-area .about-slogan, .about-area .about-content, .about-area .about-btn {
+    text-align: center;
+  }
+  .about-area .about-title h2, .about-area .about-title h5, .about-area .about-title p, .about-area .about-slogan h2, .about-area .about-slogan h5, .about-area .about-slogan p, .about-area .about-content h2, .about-area .about-content h5, .about-area .about-content p, .about-area .about-btn h2, .about-area .about-btn h5, .about-area .about-btn p {
+    text-align: center;
+  }
+  .about-area .about-title h2 {
+    font-size: 35px;
+  }
+  .about-area .about-slogan h5 {
+    font-size: 24px;
+  }
+  .about-area .about-content p {
+    font-size: 18px;
+  }
+  .about-area .about-logo img {
+    margin-top: 30px;
+  }
   .footer-area .footer-brand {
     text-align: center;
   }
   .footer-area .footer-sitemap {
     text-align: center;
   }
-  .footer-area .footer-contact .footer-label, .footer-area .footer-contact .col-2 {
+  .footer-area .footer-contact .footer-label,
+  .footer-area .footer-contact .col-2 {
     text-align: center;
   }
   .footer-area .footer-logo img {
@@ -190,5 +236,9 @@
   }
   .header-area .nav-item {
     margin-right: 15px;
+  }
+  .about-area .about-logo img {
+    width: 300px;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
