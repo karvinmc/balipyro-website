@@ -188,10 +188,24 @@
   .slider-area .carousel-caption h2 {
     font-size: 43px;
   }
-  .about-area .about-title, .about-area .about-slogan, .about-area .about-content, .about-area .about-btn {
+  .about-area .about-title,
+  .about-area .about-slogan,
+  .about-area .about-content,
+  .about-area .about-btn {
     text-align: center;
   }
-  .about-area .about-title h2, .about-area .about-title h5, .about-area .about-title p, .about-area .about-slogan h2, .about-area .about-slogan h5, .about-area .about-slogan p, .about-area .about-content h2, .about-area .about-content h5, .about-area .about-content p, .about-area .about-btn h2, .about-area .about-btn h5, .about-area .about-btn p {
+  .about-area .about-title h2,
+  .about-area .about-title h5,
+  .about-area .about-title p,
+  .about-area .about-slogan h2,
+  .about-area .about-slogan h5,
+  .about-area .about-slogan p,
+  .about-area .about-content h2,
+  .about-area .about-content h5,
+  .about-area .about-content p,
+  .about-area .about-btn h2,
+  .about-area .about-btn h5,
+  .about-area .about-btn p {
     text-align: center;
   }
   .about-area .about-title h2 {
@@ -205,6 +219,9 @@
   }
   .about-area .about-logo img {
     margin-top: 30px;
+  }
+  .services-area .services-label {
+    margin-bottom: 40px;
   }
   .footer-area .footer-brand {
     text-align: center;

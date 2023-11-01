@@ -20,6 +20,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 		<!-- CSS here -->
 		<link rel="stylesheet" href="css/style.css" />
@@ -182,17 +183,23 @@
 			<div class="container">
 				<div class="row justify-content-start">
 					<div class="col-xl-7 col-lg-8 justify-content-center">
-						<div class="about-title text-start">
+						<div
+							class="about-title text-start"
+						>
 							<h2>Meet Balipyro 2</h2>
 						</div>
-						<div class="about-slogan mb-5 text-start">
+						<div
+							class="about-slogan mb-5 text-start"
+						>
 							<h5>Iluminating Moments, Creating Memories</h5>
 						</div>
 					</div>
 				</div>
 				<div class="row justify-content-between">
 					<div class="col-xl-7 col-lg-8 justify-content-center">
-						<div class="about-content text-start">
+						<div
+							class="about-content text-start"
+						>
 							<p>
 								We are a lighting rental service provider based in Bali,
 								Indonesia. We can provide installation & arrangement for many
@@ -204,7 +211,9 @@
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4 justify-content-center">
-						<div class="about-logo text-center">
+						<div
+							class="about-logo text-center"
+						>
 							<img src="img/logo/logo-transparent.png" alt="" />
 						</div>
 					</div>
@@ -220,44 +229,43 @@
 		</div>
 		<!-- About area end -->
 
-		<!-- FIXME: Fix mobile -->
 		<!-- Services area start -->
 		<div class="services-area bg-white mt-5 mb-5 pt-5 pb-5">
 			<div class="container">
 				<div class="row text-center">
-					<div class="col-12 justify-content-center">
+					<div class="col-lg-12 justify-content-center">
 						<div class="services-title text-center mb-5">
 							<h2>Our Services</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row text-center">
-					<div class="col-3 justify-content-center">
-						<div class="services-thumb">
+					<div class="col-lg-6 col-xl-3 justify-content-center">
+						<div class="services-thumb mt-lg-4">
 							<img src="https://dummyimage.com/250x250/000/525252" alt="" />
 						</div>
 						<div class="services-label mt-4">
 							<h5>Lorem ipsum</h5>
 						</div>
 					</div>
-					<div class="col-3 justify-content-center">
-						<div class="services-thumb">
+					<div class="col-lg-6 col-xl-3 justify-content-center">
+						<div class="services-thumb mt-lg-4">
 							<img src="https://dummyimage.com/250x250/000/525252" alt="" />
 						</div>
 						<div class="services-label mt-4">
 							<h5>Lorem ipsum</h5>
 						</div>
 					</div>
-					<div class="col-3 justify-content-center">
-						<div class="services-thumb">
+					<div class="col-lg-6 col-xl-3 justify-content-center">
+						<div class="services-thumb mt-lg-4">
 							<img src="https://dummyimage.com/250x250/000/525252" alt="" />
 						</div>
 						<div class="services-label mt-4">
 							<h5>Lorem ipsum</h5>
 						</div>
 					</div>
-					<div class="col-3 justify-content-center">
-						<div class="services-thumb">
+					<div class="col-lg-6 col-xl-3 justify-content-center">
+						<div class="services-thumb mt-lg-4">
 							<img src="https://dummyimage.com/250x250/000/525252" alt="" />
 						</div>
 						<div class="services-label mt-4">
@@ -266,7 +274,7 @@
 					</div>
 				</div>
 				<div class="row text-center">
-					<div class="col-4 mx-auto justify-content-center">
+					<div class="col-lg-5 col-xl-4 mx-auto justify-content-center">
 						<div class="services-btn">
 							<a class="btn btn-primary mt-4" href="#">See more</a>
 						</div>
@@ -373,5 +381,10 @@
 			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 			crossorigin="anonymous"
 		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</body>
+	<script>
+		// Initialize AOS
+		AOS.init();
+	</script>
 </html>

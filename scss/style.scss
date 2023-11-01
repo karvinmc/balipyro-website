@@ -274,9 +274,14 @@ $darken-red: darken(
 	}
 
 	.about-area {
-		.about-title, .about-slogan, .about-content, .about-btn {
+		.about-title,
+		.about-slogan,
+		.about-content,
+		.about-btn {
 			text-align: center;
-			h2, h5, p {
+			h2,
+			h5,
+			p {
 				text-align: center;
 			}
 		}
@@ -303,6 +308,12 @@ $darken-red: darken(
 			img {
 				margin-top: 30px;
 			}
+		}
+	}
+
+	.services-area {
+		.services-label {
+			margin-bottom: 40px;
 		}
 	}
 
