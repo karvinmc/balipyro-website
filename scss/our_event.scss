@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+// Primary colors
+$white: #f5f5f5;
+$black: #0f0f0f;
+$darker-grey: #2d2d2d;
+$dark-grey: #333333;
+$red: #e81828;
+
+// Darken primary colors
+$darken-red: darken(
+	$color: #e81828,
+	$amount: 10,
+);
+
+.our-event {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    .our-event-content{
+        h1{
+            font-size: 72px;
+        }
+    }
+}
