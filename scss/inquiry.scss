@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+// Primary colors
+$white: #f5f5f5;
+$black: #0f0f0f;
+$darker-grey: #2d2d2d;
+$dark-grey: #333333;
+$red: #e81828;
+
+// Darken primary colors
+$darken-red: darken(
+	$color: #e81828,
+	$amount: 10,
+);
+
+.inquiry-area {
+    .inquiry-title {
+        h5 {
+            font-family: "Barlow", sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+    .inquiry-slogan {
+        h2 {
+            font-family: "Barlow", sans-serif;
+            font-size: 54px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+    .inquiry-btn {
+        a {
+			font-size: 20px;
+			text-transform: uppercase;
+			border-radius: 1px;
+			padding: 12px;
+			background-color: $red;
+			border-color: $red;
+			font-weight: bold;
+		}
+
+		a:hover {
+			background-color: $darken-red;
+		}
+    }
+}
