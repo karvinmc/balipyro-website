@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+.footer-area {
+  font-family: "Nunito", sans-serif;
+}
+.footer-area a img {
+  width: 250px;
+  height: auto;
+}
+.footer-area .footer-label {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 23px;
+}
+.footer-area .list-inline-item i {
+  font-size: 27px;
+  margin-left: -5px;
+  margin-right: -2px;
+}
+.footer-area .nav-item:hover {
+  background-color: yellow;
+  color: #e81828;
+}
+.footer-area .footer-nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.footer-area .footer-nav a:hover {
+  color: #e81828;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-area .footer-contact .col-10 {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-area .footer-brand {
+    text-align: center;
+  }
+  .footer-area .footer-sitemap {
+    text-align: center;
+  }
+  .footer-area .footer-contact .footer-label,
+  .footer-area .footer-contact .col-2 {
+    text-align: center;
+  }
+  .footer-area .footer-logo img {
+    width: 160px;
+    height: auto;
+  }
+  .footer-area .list-inline-item {
+    margin-right: -5px;
+  }
+}/*# sourceMappingURL=footer.css.map */
