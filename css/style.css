@@ -3,43 +3,6 @@
   height: 100vh;
 }
 
-.header-area {
-  font-family: "Nunito", sans-serif;
-}
-.header-area .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.header-area .navbar img {
-  width: 170px;
-  height: auto;
-  margin-top: -20px;
-  margin-bottom: -10px;
-}
-.header-area .navbar h5 {
-  margin-top: 10px;
-  margin-bottom: -10px;
-  font-size: 16px;
-  font-style: italic;
-}
-.header-area .nav-item {
-  font-size: 18px;
-  margin-right: 30px;
-  text-transform: uppercase;
-}
-.header-area .nav-item a {
-  color: #0f0f0f;
-}
-.header-area .nav-item a:hover {
-  color: #e81828;
-}
-.header-area .navbar-toggler {
-  padding: 1px 5px;
-  font-size: 18px;
-  line-height: 0.3;
-  background: #f5f5f5;
-}
-
 .slider-area {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
@@ -138,50 +101,12 @@
   background-color: #ba131f;
 }
 
-.footer-area {
-  font-family: "Nunito", sans-serif;
-}
-.footer-area a img {
-  width: 250px;
-  height: auto;
-}
-.footer-area .footer-label {
-  font-family: "Barlow", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 23px;
-}
-.footer-area .list-inline-item i {
-  font-size: 27px;
-  margin-left: -5px;
-  margin-right: -2px;
-}
-.footer-area .nav-item:hover {
-  background-color: yellow;
-  color: #e81828;
-}
-.footer-area .footer-nav a {
-  color: #f5f5f5;
-  text-decoration: none;
-}
-.footer-area .footer-nav a:hover {
-  color: #e81828;
-}
-
 @media only screen and (max-width: 576px) {
   .footer-area .footer-contact .col-10 {
     text-align: justify;
   }
 }
 @media only screen and (max-width: 992px) {
-  .header-area .navbar a h5 {
-    text-align: left;
-  }
-  .header-area .navbar .nav-item {
-    text-align: center;
-  }
   .slider-area .carousel-caption h5 {
     font-size: 30px;
   }
@@ -223,37 +148,8 @@
   .services-area .services-label {
     margin-bottom: 40px;
   }
-  .footer-area .footer-brand {
-    text-align: center;
-  }
-  .footer-area .footer-sitemap {
-    text-align: center;
-  }
-  .footer-area .footer-contact .footer-label,
-  .footer-area .footer-contact .col-2 {
-    text-align: center;
-  }
-  .footer-area .footer-logo img {
-    width: 160px;
-    height: auto;
-  }
-  .footer-area .list-inline-item {
-    margin-right: -5px;
-  }
 }
 @media only screen and (max-width: 1200px) {
-  .header-area .navbar a h5 {
-    font-size: smaller;
-  }
-  .header-area .navbar a img {
-    width: 170px;
-    height: auto;
-    margin-top: -20px;
-    margin-bottom: -10px;
-  }
-  .header-area .nav-item {
-    margin-right: 15px;
-  }
   .about-area .about-logo img {
     width: 300px;
     height: auto;
