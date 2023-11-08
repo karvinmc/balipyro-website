@@ -2,9 +2,16 @@
 .footer-area {
   font-family: "Nunito", sans-serif;
 }
+.footer-area .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .footer-area a img {
   width: 250px;
   height: auto;
+}
+.footer-area .footer-brand p {
+  padding-right: 25px;
 }
 .footer-area .footer-label {
   font-family: "Barlow", sans-serif;
@@ -36,6 +43,16 @@
     text-align: justify;
   }
 }
+@media only screen and (max-width: 768px) {
+  .footer-area .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer-area .footer-brand .footer-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .footer-area .footer-brand {
     text-align: center;
@@ -46,6 +63,9 @@
   .footer-area .footer-contact .footer-label,
   .footer-area .footer-contact .col-2 {
     text-align: center;
+  }
+  .footer-area .footer-brand p {
+    padding-right: 0px;
   }
   .footer-area .footer-logo img {
     width: 160px;

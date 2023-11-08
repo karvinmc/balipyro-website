@@ -16,10 +16,21 @@ $darken-red: darken(
 .footer-area {
 	font-family: "Nunito", sans-serif;
 
+	.container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
 	a {
 		img {
 			width: 250px;
 			height: auto;
+		}
+	}
+
+	.footer-brand {
+		p {
+			padding-right: 25px;
 		}
 	}
 
@@ -68,6 +79,23 @@ $darken-red: darken(
 	}
 }
 
+// md
+@media only screen and (max-width: 768px) {
+	.footer-area {
+		.container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.footer-brand {
+			.footer-text {
+				padding-left: 45px;
+				padding-right: 45px;
+			}
+		}
+	}
+}
+
 // lg
 @media only screen and (max-width: 992px) {
 	.footer-area {
@@ -83,6 +111,12 @@ $darken-red: darken(
 			.footer-label,
 			.col-2 {
 				text-align: center;
+			}
+		}
+
+		.footer-brand {
+			p {
+				padding-right: 0px;
 			}
 		}
 
