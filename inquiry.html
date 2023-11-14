@@ -78,31 +78,76 @@
 		</header>
 		<!-- Header end -->
 
-		<h1>This is INQUIRY page</h1>
-
 		<!-- Inquiry area start -->
 		<div class="inquiry-area mt-5 mb-5 pt-5 pb-5">
 			<div class="container">
-				<div class="row justify-content-start">
-					<div class="col-xl-4 justify-content-center">
-						<div class="inquiry-title text-start">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-4 col-xl-6">
+						<div class="inquiry-title">
 							<h5>Inquiries</h5>
 						</div>
-						<div class="inquiry-slogan mb-5 text-start">
+						<div class="inquiry-slogan mb-5">
 							<h2>Illuminate your events now!</h2>
 						</div>
 					</div>
-					<div class="col-xl-8 justify-content-center">
-						<div class="contact-form">
-							
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-start">
-					<div class="col-12 text-start">
-						<div class="inquiry-btn">
-							<a class="btn btn-primary mt-4" href="#">Get in touch</a>
-						</div>
+					<div class="col-lg-6 col-xl-6 justify-content-center">
+						<form onsubmit="sendEmail(); reset(); return false()">
+							<div class="contact-form mb-3">
+								<label for="name" class="form-label">Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									placeholder="Your Name"
+									required
+								/>
+							</div>
+							<div class="contact-form mb-3">
+								<label for="email" class="form-label">Email</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="name@example.com"
+									required
+								/>
+							</div>
+							<div class="contact-form mb-3">
+								<label for="waNumber" class="form-label">Whatsapp Number</label>
+								<input
+									type="text"
+									class="form-control"
+									id="waNumber"
+									required
+									placeholder="0812345678"
+								/>
+							</div>
+							<div class="contact-form mb-3">
+								<label for="event" class="form-label">Event</label>
+								<input
+									type="text"
+									class="form-control"
+									id="event"
+									required
+									placeholder="Your Event"
+								/>
+							</div>
+							<div class="contact-form mb-3">
+								<label for="specialReq" class="form-label">Special Request</label>
+								<textarea
+									class="form-control"
+									id="specialReq"
+									rows="6"
+									placeholder="Write any special request here!"
+									required
+								></textarea>
+							</div>
+							<div class="inquiry-btn">
+								<button type="submit" class="btn btn-primary mt-4">
+									Get in touch
+								</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -207,4 +252,6 @@
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 		crossorigin="anonymous"
 	></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/inquiry.js"></script>
 </html>
