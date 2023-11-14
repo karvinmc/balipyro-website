@@ -13,12 +13,34 @@ $darken-red: darken(
 	$amount: 10,
 );
 
-.our-event {
+.slider-area {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
-    .our-event-content{
-        h1{
-            font-size: 72px;
-        }
+  
+    .carousel-item {
+      height: 200px; // Adjusted height
+      min-height: 200px; // Adjusted min-height
     }
-}
+  
+    .carousel-inner {
+      position: relative;
+  
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px; // Adjusted max-height
+        width: 100%;
+      }
+    }
+  }
