@@ -3,6 +3,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.inquiry-area .form-area {
+  border-radius: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .inquiry-area .inquiry-title h5 {
   font-family: "Barlow", sans-serif;
   font-size: 30px;
