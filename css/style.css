@@ -6,6 +6,7 @@
 .slider-area {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
+  margin-top: -82px;
 }
 .slider-area .carousel-item {
   height: 100vh;
@@ -119,6 +120,9 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .slider-area {
+    margin-top: 0;
+  }
   .slider-area .carousel-caption h5 {
     font-size: 30px;
   }

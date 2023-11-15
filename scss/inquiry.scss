@@ -14,26 +14,38 @@ $darken-red: darken(
 );
 
 .inquiry-area {
-    .inquiry-title {
-        h5 {
-            font-family: "Barlow", sans-serif;
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+	.container {
+        padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.inquiry-title {
+		h5 {
+			font-family: "Barlow", sans-serif;
+			font-size: 30px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+
+	.inquiry-slogan {
+		h2 {
+			font-family: "Barlow", sans-serif;
+			font-size: 54px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+
+    .contact-form {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
     }
 
-    .inquiry-slogan {
-        h2 {
-            font-family: "Barlow", sans-serif;
-            font-size: 54px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-    }
-
-    .inquiry-btn {
-        a {
+	.inquiry-btn {
+		button {
 			font-size: 20px;
 			text-transform: uppercase;
 			border-radius: 1px;
@@ -43,8 +55,8 @@ $darken-red: darken(
 			font-weight: bold;
 		}
 
-		a:hover {
+		button:hover {
 			background-color: $darken-red;
 		}
-    }
+	}
 }

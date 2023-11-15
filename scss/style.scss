@@ -20,6 +20,7 @@ $darken-red: darken(
 .slider-area {
 	font-family: "Barlow", sans-serif;
 	font-weight: 900;
+	margin-top: -82px;
 
 	.carousel-item {
 		height: 100vh;
@@ -178,6 +179,8 @@ $darken-red: darken(
 // lg
 @media only screen and (max-width: 992px) {
 	.slider-area {
+		margin-top: 0;
+		
 		.carousel-caption {
 			h5 {
 				font-size: 30px;

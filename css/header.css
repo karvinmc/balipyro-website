@@ -5,6 +5,10 @@
 .header-area .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
+  height: 82px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 .header-area .navbar img {
   width: 170px;
@@ -17,6 +21,7 @@
   margin-bottom: -10px;
   font-size: 16px;
   font-style: italic;
+  color: #f5f5f5;
 }
 .header-area .nav-item {
   font-size: 18px;
@@ -24,7 +29,7 @@
   text-transform: uppercase;
 }
 .header-area .nav-item a {
-  color: #0f0f0f;
+  color: #f5f5f5;
 }
 .header-area .nav-item a:hover {
   color: #e81828;
@@ -37,11 +42,21 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .header-area .navbar a h5 {
-    text-align: left;
+  .header-area .navbar {
+    background-color: #2d2d2d;
+    padding-bottom: 75px;
   }
   .header-area .navbar .nav-item {
     text-align: center;
+  }
+  .header-area .navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: inherit;
+    padding-top: 5px;
+    background-color: #2d2d2d;
   }
 }
 @media only screen and (max-width: 1200px) {
