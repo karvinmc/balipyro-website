@@ -47,6 +47,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.about-area .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .about-area .about-title h2 {
   font-family: "Barlow", sans-serif;
   font-size: 40px;
@@ -85,6 +89,9 @@
 .services-area .container {
   padding-bottom: 100px;
 }
+.services-area .container {
+  padding-bottom: 100px;
+}
 .services-area .services-title h2 {
   font-family: "Barlow", sans-serif;
   font-size: 40px;
@@ -112,6 +119,11 @@
 @media only screen and (max-width: 576px) {
   .footer-area .footer-contact .col-10 {
     text-align: justify;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-area .footer-brand, .footer-area .footer-sitemap {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
