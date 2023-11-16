@@ -33,12 +33,16 @@
 		<header>
 			<div class="header-area">
 				<div id="sticky-header" class="main-header-area">
-					<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+					<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
 						<div class="container">
 							<a
 								class="navbar-brand animate__animated animate__fadeIn"
 								href="index.html"
-								><img src="img/logo/logo-transparent.png" alt="" />
+								><img
+									id="nav-brand"
+									src="img/logo/logo-invert-transparent.png"
+									alt=""
+								/>
 								<h5>Illuminating Moments, Creating Memories</h5>
 							</a>
 							<button
@@ -77,6 +81,7 @@
 					</nav>
 				</div>
 			</div>
+			<div id="navbarFill" class="navbar-fill-space visually-hidden"></div>
 		</header>
 		<!-- Header end -->
 
@@ -384,6 +389,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/header-home.js"></script>
 	</body>
 	<script>
 		// Initialize AOS
