@@ -14,12 +14,15 @@ $darken-red: darken(
 	$amount: 10,
 );
 
-// Blur background
-$black2: rgba(15, 15, 15, 0.5);
+$darken-light-grey: darken(
+	$color: #dadada,
+	$amount: 10,
+);
 
 .header-area {
 	font-family: "Nunito", sans-serif;
 
+	// only for desktop devices
 	@media (min-width: 992px) {
 		// if navbar is scrolled
 		.navbar-scroll {
@@ -62,20 +65,50 @@ $black2: rgba(15, 15, 15, 0.5);
 		margin-right: 30px;
 		text-transform: uppercase;
 
-		a {
+		.nav-link {
+			color: $darken-light-grey;
+			position: relative;
+		}
+
+		.nav-link:hover,
+		.active {
 			color: $white;
 		}
 
-		a:hover {
-			color: $red;
+		@media (min-width: 991px) {
+			.nav-link::after {
+				content: "";
+				opacity: 0;
+				transition: 0.3s ease-in-out;
+				height: 2px;
+				width: 0%;
+				background-color: $red;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.nav-link:hover::after,
+			.active::after {
+				opacity: 1;
+				width: 100%;
+			}
 		}
 	}
 
 	.navbar-toggler {
 		padding: 1px 5px;
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 0.3;
-		background: $white;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	.navbar-toggler:focus,
+	.btn-close:focus {
+		box-shadow: none;
+		outline: none;
 	}
 }
 
@@ -89,25 +122,43 @@ $black2: rgba(15, 15, 15, 0.5);
 	.header-area {
 		.navbar {
 			background-color: $darker-grey;
+			height: 75px;
+			position: fixed;
+		}
 
-			.nav-item {
-				text-align: center;
-			}
+		.nav-link {
+			font-size: 20px;
+			background-color: rgba(50, 50, 50);
+			border-radius: 12px;
+			margin-bottom: 20px;
+			padding: 15px 50px;
+		}
 
-			.navbar-collapse {
-				position: absolute;
-				top: 100%;
-				left: 0;
-				width: 100%;
-				z-index: inherit;
-				padding-top: 5px;
-				background-color: $darker-grey;
-			}
+		.nav-link:hover, .active {
+			background-color: rgb(58, 58, 58) ;
+		}
 
-			.navbar-toggler {
-				background-color: transparent;
-				border-color: transparent;
-			}
+		.navbar-collapse {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			padding-left: 15px;
+			background-color: $darker-grey;
+		}
+
+		.navbar-nav {
+			height: 100vh;
+			display: flex;
+			// justify-content: center;
+			padding-top: 100px;
+			text-align: center;
+		}
+
+		.navbar-toggler,
+		.navbar-brand {
+			z-index: 1;
 		}
 	}
 }

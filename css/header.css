@@ -36,17 +36,44 @@
   margin-right: 30px;
   text-transform: uppercase;
 }
-.header-area .nav-item a {
+.header-area .nav-item .nav-link {
+  color: #c1c1c1;
+  position: relative;
+}
+.header-area .nav-item .nav-link:hover,
+.header-area .nav-item .active {
   color: #f5f5f5;
 }
-.header-area .nav-item a:hover {
-  color: #e81828;
+@media (min-width: 991px) {
+  .header-area .nav-item .nav-link::after {
+    content: "";
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    height: 2px;
+    width: 0%;
+    background-color: #e81828;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-area .nav-item .nav-link:hover::after,
+  .header-area .nav-item .active::after {
+    opacity: 1;
+    width: 100%;
+  }
 }
 .header-area .navbar-toggler {
   padding: 1px 5px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 0.3;
-  background: #f5f5f5;
+  background-color: transparent;
+  border-color: transparent;
+}
+.header-area .navbar-toggler:focus,
+.header-area .btn-close:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .navbar-fill-space {
@@ -56,22 +83,37 @@
 @media only screen and (max-width: 992px) {
   .header-area .navbar {
     background-color: #2d2d2d;
+    height: 75px;
+    position: fixed;
   }
-  .header-area .navbar .nav-item {
-    text-align: center;
+  .header-area .nav-link {
+    font-size: 20px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 15px 50px;
   }
-  .header-area .navbar .navbar-collapse {
+  .header-area .nav-link:hover, .header-area .active {
+    background-color: rgb(58, 58, 58);
+  }
+  .header-area .navbar-collapse {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    z-index: inherit;
-    padding-top: 5px;
+    padding-left: 15px;
     background-color: #2d2d2d;
   }
-  .header-area .navbar .navbar-toggler {
-    background-color: transparent;
-    border-color: transparent;
+  .header-area .navbar-nav {
+    height: 100vh;
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .header-area .navbar-toggler,
+  .header-area .navbar-brand {
+    z-index: 1;
   }
 }
 @media only screen and (max-width: 1200px) {
