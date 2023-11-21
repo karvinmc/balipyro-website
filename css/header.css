@@ -82,19 +82,19 @@
 
 @media only screen and (max-width: 992px) {
   .header-area .navbar {
-    background-color: #2d2d2d;
+    background-color: #333333;
     height: 75px;
     position: fixed;
   }
   .header-area .nav-link {
     font-size: 20px;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(58, 58, 58);
     border-radius: 12px;
     margin-bottom: 20px;
     padding: 15px 50px;
   }
   .header-area .nav-link:hover, .header-area .active {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(75, 75, 75);
   }
   .header-area .navbar-collapse {
     position: absolute;
@@ -103,7 +103,7 @@
     right: 0;
     width: 100%;
     padding-left: 15px;
-    background-color: #2d2d2d;
+    background-color: #333333;
   }
   .header-area .navbar-nav {
     height: 100vh;
