@@ -13,6 +13,9 @@
 .footer-area .footer-brand p {
   padding-right: 25px;
 }
+.footer-area .footer-brand .bi:hover {
+  color: #e81828;
+}
 .footer-area .footer-label {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
@@ -36,6 +39,16 @@
 }
 .footer-area .footer-nav a:hover {
   color: #e81828;
+}
+@media (min-width: 1200px) {
+  .footer-area .footer-contact .col-10 {
+    margin-left: -40px;
+  }
+}
+@media (min-width: 991px) {
+  .footer-area .footer-contact .col-10 {
+    margin-left: -20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {

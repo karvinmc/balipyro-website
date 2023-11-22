@@ -29,11 +29,16 @@
 		<header>
 			<div class="header-area">
 				<div id="sticky-header" class="main-header-area">
-					<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
+					<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
 						<div class="container">
 							<a
-								class="navbar-brand animate__animated animate__fadeIn"
-								href="index.html"><img src="img/logo/logo-transparent.png" alt />
+								class="navbar-brand"
+								href="index.html"
+								><img
+									id="nav-brand"
+									src="img/logo/logo-invert-transparent.png"
+									alt=""
+								/>
 								<h5>Illuminating Moments, Creating Memories</h5>
 							</a>
 							<button
@@ -43,24 +48,27 @@
 								data-bs-target="#navbarSupportedContent"
 								aria-controls="navbarSupportedContent"
 								aria-expanded="false"
-								aria-label="Toggle navigation">
+								aria-label="Toggle navigation"
+							>
 								<span class="navbar-toggler-icon"></span>
 							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent" style="transition: 1s;">
 								<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-									<li class="nav-item animate__animated animate__fadeIn">
-										<a class="nav-link" aria-current="page" href="index.html">Home</a>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="index.html"
+											>Home</a
+										>
 									</li>
-									<li class="nav-item animate__animated animate__fadeIn">
+									<li class="nav-item">
 										<a class="nav-link" href="./services.html">Services</a>
 									</li>
-									<li class="nav-item animate__animated animate__fadeIn">
-										<a class="nav-link" href="./our_event.html">Our Event</a>
+									<li class="nav-item">
+										<a class="nav-link active" href="./our_event.html">Our Event</a>
 									</li>
-									<li class="nav-item animate__animated animate__fadeIn">
+									<li class="nav-item">
 										<a class="nav-link" href="./about.html">About</a>
 									</li>
-									<li class="nav-item animate__animated animate__fadeIn">
+									<li class="nav-item">
 										<a class="nav-link" href="./inquiry.html">Inquiry</a>
 									</li>
 								</ul>
@@ -69,6 +77,7 @@
 					</nav>
 				</div>
 			</div>
+			<div id="navbarFill" class="navbar-fill-space visually-hidden"></div>
 		</header>
 		<!-- Header end -->
 
@@ -377,27 +386,36 @@
 			<div class="container">
 				<div class="row">
 					<div
-						class="footer-brand col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-left">
-						<a class="footer-logo" href="index.html"><img
-								src="img/logo/logo-alt-transparent.png" alt /></a>
-						<p>
+						class="footer-brand col-md-12 col-lg-4 col-xl-4 mx-auto mt-3 text-left"
+					>
+						<a class="footer-logo" href="index.html"
+							><img src="img/logo/logo-alt-transparent.png" alt=""
+						/></a>
+						<p class="footer-text">
 							Get more information and other updates on our contact and social
 							media
 						</p>
 						<ul class="list-unstyled list-inline">
 							<li class="list-inline-item">
-								<a class="btn btn-link text-white" href><i class="bi bi-instagram"></i></a>
+								<a class="btn btn-link text-white" href=""
+									><i class="bi bi-instagram"></i
+								></a>
 							</li>
 							<li class="list-inline-item">
-								<a class="btn btn-link text-white" href><i class="bi bi-envelope-at"></i></a>
+								<a class="btn btn-link text-white" href=""
+									><i class="bi bi-envelope-at"></i
+								></a>
 							</li>
 							<li class="list-inline-item">
-								<a class="btn btn-link text-white" href><i class="bi bi-whatsapp"></i></a>
+								<a class="btn btn-link text-white" href=""
+									><i class="bi bi-whatsapp"></i
+								></a>
 							</li>
 						</ul>
 					</div>
 					<div
-						class="footer-sitemap col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
+						class="footer-sitemap col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 text-left"
+					>
 						<h5 class="footer-label">Sitemap</h5>
 						<p class="footer-nav">
 							<a href="#">Our Company</a>
@@ -413,7 +431,8 @@
 						</p>
 					</div>
 					<div
-						class="footer-contact col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
+						class="footer-contact col-md-6 col-lg-4 col-xl-4 mx-auto mt-3 text-left"
+					>
 						<h5 class="footer-label">Contact</h5>
 						<div class="row">
 							<div class="col-2">

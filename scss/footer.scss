@@ -32,6 +32,10 @@ $darken-red: darken(
 		p {
 			padding-right: 25px;
 		}
+
+		.bi:hover {
+			color: $red;
+		}
 	}
 
 	.footer-label {
@@ -64,6 +68,22 @@ $darken-red: darken(
 
 		a:hover {
 			color: $red;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.footer-contact {
+			.col-10 {
+				margin-left: -40px;
+			}
+		}
+	}
+
+	@media (min-width: 991px) {
+		.footer-contact {
+			.col-10 {
+				margin-left: -20px;
+			}
 		}
 	}
 }
