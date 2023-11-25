@@ -9,54 +9,87 @@ $red: #e81828;
 
 // Darken primary colors
 $darken-red: darken(
-	$color: #e81828,
-	$amount: 10,
+    $color: #e81828,
+    $amount: 10,
 );
 
+.inquiry-banner {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    background-image: url(https://dummyimage.com/1920x1080/525252/5c5c5c);
+    background-size: 100%;
+    margin-top: -120px;
+    letter-spacing: 2px;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 55px;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-family: "Nunito", sans-serif;
+        font-size: 30px;
+        color: $white;
+    }
+}
+
 .inquiry-area {
-	.container {
+    .container {
         padding-top: 50px;
-		padding-bottom: 50px;
-	}
+        padding-bottom: 50px;
+    }
 
-	.inquiry-title {
-		h5 {
-			font-family: "Barlow", sans-serif;
-			font-size: 30px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-	}
+    // .inquiry-title {
+    // 	h5 {
+    // 		font-family: "Barlow", sans-serif;
+    // 		font-size: 30px;
+    // 		text-transform: uppercase;
+    // 		letter-spacing: 2px;
+    // 	}
+    // }
 
-	.inquiry-slogan {
-		h2 {
-			font-family: "Barlow", sans-serif;
-			font-size: 54px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-	}
+    .inquiry-slogan {
+        h2 {
+            font-family: "Barlow", sans-serif;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
 
     .contact-form {
         font-family: "Nunito", sans-serif;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 14px;
         text-transform: uppercase;
     }
 
-	.inquiry-btn {
-		button {
-			font-size: 20px;
-			text-transform: uppercase;
-			border-radius: 1px;
-			padding: 12px;
-			background-color: $red;
-			border-color: $red;
-			font-weight: bold;
-		}
+    .inquiry-btn {
+        button {
+            font-size: 20px;
+            text-transform: uppercase;
+            border-radius: 10px;
+            padding: 12px;
+            background-color: $red;
+            border-color: $red;
+            font-weight: bold;
+        }
 
-		button:hover {
-			background-color: $darken-red;
-		}
+        button:hover {
+            background-color: $darken-red;
+        }
+    }
+
+	.inquiry-map {
+		overflow: hidden;
+		display: flex;
 	}
 }
