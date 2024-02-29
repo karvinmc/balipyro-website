@@ -14,31 +14,31 @@ $darken-red: darken(
 );
 
 .our-event-banner {
-	font-family: "Barlow", sans-serif;
-	font-weight: 900;
-	background-image: url(https://dummyimage.com/1920x1080/525252/5c5c5c);
-	background-size: 100%;
-	margin-top: -120px;
-	letter-spacing: 2px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    background-image: url(https://dummyimage.com/1920x1080/525252/5c5c5c);
+    background-size: 100%;
+    margin-top: -120px;
+    letter-spacing: 2px;
 
-	.row {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100vh;
-	}
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 
-	h1 {
-		font-size: 55px;
-		color: $white;
-		text-transform: uppercase;
-	}
+    h1 {
+        font-size: 55px;
+        color: $white;
+        text-transform: uppercase;
+    }
 
-	h3 {
-		font-family: "Nunito", sans-serif;
-		font-size: 30px;
-		color: $white;
-	}
+    h3 {
+        font-family: "Nunito", sans-serif;
+        font-size: 30px;
+        color: $white;
+    }
 }
 
 .slider-area {
@@ -73,14 +73,32 @@ $darken-red: darken(
     }
 }
 
-.our-event-carousel-text {
-    font-family: "Nunito", sans-serif;
-    margin-top: 15%;
-    font-size: 24px;
-    justify-content: center;
-    text-align: center;
-}
-
 .our-event {
-    margin-top: -120px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .our-event-carousel-text {
+        font-family: "Nunito", sans-serif;
+        margin-top: 15%;
+        font-size: 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .carousel-item {
+        img {
+            float: left;
+            width: 640px;
+            height: 480px;
+            object-fit: cover;
+        }
+    }
+    
+    table {
+        text-align: left;
+
+        @media only screen and (max-width: 992px) {
+            font-size: smaller;
+        }
+    }
 }

@@ -52,14 +52,28 @@
   width: 100%;
 }
 
-.our-event-carousel-text {
+.our-event {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.our-event .our-event-carousel-text {
   font-family: "Nunito", sans-serif;
   margin-top: 15%;
   font-size: 24px;
   justify-content: center;
   text-align: center;
 }
-
-.our-event {
-  margin-top: -120px;
+.our-event .carousel-item img {
+  float: left;
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+}
+.our-event table {
+  text-align: left;
+}
+@media only screen and (max-width: 992px) {
+  .our-event table {
+    font-size: smaller;
+  }
 }/*# sourceMappingURL=our_event.css.map */

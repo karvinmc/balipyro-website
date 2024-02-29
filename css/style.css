@@ -98,8 +98,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.services-area .services-label h5 {
-  font-size: 25px;
+@media only screen and (max-width: 768px) {
+  .services-area .services-title h2 {
+    font-size: 32px;
+  }
 }
 .services-area .services-btn a {
   font-size: 20px;
@@ -111,6 +113,11 @@
   background-color: #e81828;
   border-color: #e81828;
   font-weight: bold;
+}
+@media only screen and (max-width: 1400px) {
+  .services-area .services-btn {
+    margin-bottom: 55px;
+  }
 }
 .services-area .services-btn a:hover {
   background-color: #ba131f;

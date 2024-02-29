@@ -138,11 +138,11 @@ $darken-red: darken(
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
-	}
 
-	.services-label {
-		h5 {
-			font-size: 25px;
+		@media only screen and (max-width: 768px) {
+			h2 {
+				font-size: 32px;
+			}	
 		}
 	}
 
@@ -157,6 +157,10 @@ $darken-red: darken(
 			background-color: $red;
 			border-color: $red;
 			font-weight: bold;
+		}
+
+		@media only screen and (max-width: 1400px) {
+			margin-bottom: 55px;
 		}
 
 		a:hover {
