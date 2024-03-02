@@ -22,4 +22,27 @@
   font-family: "Nunito", sans-serif;
   font-size: 30px;
   color: #f5f5f5;
+}
+
+.about-title {
+  font-size: 80px;
+  font-family: "Barlow", sans-serif;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about-title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about-title {
+    font-size: 48px;
+  }
+}
+
+.about-content {
+  border-radius: 20px;
+  font-size: 18px;
+}
+.about-content img {
+  max-width: 350px;
 }/*# sourceMappingURL=about.css.map */
