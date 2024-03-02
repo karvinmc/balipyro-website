@@ -77,12 +77,54 @@ $darken-red: darken(
     margin-top: 150px;
     margin-bottom: 150px;
 
+    .row {
+        border-radius: 20px;
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            width: 600px;
+            transform: translateX(10%);
+        }
+
+        @media (max-width: 768px) {
+            padding-bottom: 45px;
+        }
+    }
+
     .our-event-carousel-text {
         font-family: "Nunito", sans-serif;
         margin-top: 15%;
         font-size: 24px;
         justify-content: center;
         text-align: center;
+    }
+
+    .carousel {
+        transform: translateX(-7%);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 600px;
+        height: auto;
+        overflow: hidden;
+
+        @media (min-width: 993px) and (max-width: 1400px) {
+            transform: translateX(-8%);
+            width: fit-content;
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            transform: none;
+            border-radius: 20px 20px 0px 0px;
+            width: 600px;
+            transform: translateX(-19%);
+        }
+
+        @media (max-width: 768px) {
+            transform: none;
+            border-radius: 20px 20px 0px 0px;
+            width: fit-content;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
     }
 
     .carousel-item {
@@ -93,7 +135,7 @@ $darken-red: darken(
             object-fit: cover;
         }
     }
-    
+
     table {
         text-align: left;
 

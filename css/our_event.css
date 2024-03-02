@@ -56,12 +56,57 @@
   margin-top: 150px;
   margin-bottom: 150px;
 }
+.our-event .row {
+  border-radius: 20px;
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .our-event .row {
+    width: 600px;
+    transform: translateX(10%);
+  }
+}
+@media (max-width: 768px) {
+  .our-event .row {
+    padding-bottom: 45px;
+  }
+}
 .our-event .our-event-carousel-text {
   font-family: "Nunito", sans-serif;
   margin-top: 15%;
   font-size: 24px;
   justify-content: center;
   text-align: center;
+}
+.our-event .carousel {
+  transform: translateX(-7%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 600px;
+  height: auto;
+  overflow: hidden;
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  .our-event .carousel {
+    transform: translateX(-8%);
+    width: fit-content;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .our-event .carousel {
+    transform: none;
+    border-radius: 20px 20px 0px 0px;
+    width: 600px;
+    transform: translateX(-19%);
+  }
+}
+@media (max-width: 768px) {
+  .our-event .carousel {
+    transform: none;
+    border-radius: 20px 20px 0px 0px;
+    width: fit-content;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
 }
 .our-event .carousel-item img {
   float: left;
