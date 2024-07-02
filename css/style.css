@@ -11,6 +11,27 @@
 .slider-area .carousel-item {
   height: 100vh;
   min-height: 300px;
+  position: relative;
+}
+.slider-area .carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.slider-area .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 .slider-area .carousel-caption {
   text-align: left;
@@ -129,12 +150,14 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .footer-area .footer-brand, .footer-area .footer-sitemap {
+  .footer-area .footer-brand,
+  .footer-area .footer-sitemap {
     margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .footer-area .footer-brand, .footer-area .footer-sitemap {
+  .footer-area .footer-brand,
+  .footer-area .footer-sitemap {
     margin-bottom: 20px;
   }
 }

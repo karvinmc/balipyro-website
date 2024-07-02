@@ -2,10 +2,10 @@
 .services-banner {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
-  background-image: url(../img/portofolio/porto-4.jpg);
-  background-size: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.717);
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #474a4c;
   margin-top: -120px;
   letter-spacing: 2px;
 }

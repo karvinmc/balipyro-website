@@ -16,8 +16,10 @@ $darken-red: darken(
 .services-banner {
 	font-family: "Barlow", sans-serif;
 	font-weight: 900;
-	background-image: url(https://dummyimage.com/1920x1080/525252/5c5c5c);
-	background-size: 100%;
+	background: no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: #474a4c;
 	margin-top: -120px;
 	letter-spacing: 2px;
 

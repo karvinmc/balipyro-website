@@ -2,10 +2,10 @@
 .our-event-banner {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
-  background-image: url(../img/halaman\ utama\ index/IMG_4192.jpg);
-  background-size: 100%;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.376);
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #474a4c;
   margin-top: -120px;
   letter-spacing: 2px;
 }
