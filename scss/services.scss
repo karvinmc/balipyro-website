@@ -66,3 +66,11 @@ $darken-red: darken(
     font-family: "Barlow", sans-serif;
     font-weight: 900;
 }
+
+.services-thumb {
+    transition: transform 0.3s;
+}
+
+.services-thumb:hover {
+    transform: scale(1.05);
+}
