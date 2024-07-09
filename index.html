@@ -31,10 +31,13 @@
         <link rel="stylesheet" href="css/footer.css" />
     </head>
 
-    <body>
+    <body class="">
         <div class="header-area">
             <div id="sticky-header" class="main-header-area">
-                <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+                <nav
+                    class="navbar sticky-top navbar-expand-lg navbar-dark"
+                    data-aos="fade-down"
+                >
                     <div class="container">
                         <a class="navbar-brand" href="index.html"
                             ><img
@@ -131,8 +134,8 @@
                                 alt="..."
                             />
                             <div class="carousel-caption">
-                                <h5 class="">Hi! Welcome</h5>
-                                <h2 class="">
+                                <h5 data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">Hi! Welcome</h5>
+                                <h2 data-aos="fade-right" data-aos-duration="800" data-aos-delay="1200">
                                     Illuminate Your Event Now With Bali Pyro 2!
                                 </h2>
                             </div>
@@ -268,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-5 col-xl-8 mb-4 mb-xxl-0 px-3">
+                    <div class="col-xxl-5 col-xl-8 mb-4 mb-xxl-0 px-5">
                         <div class="services-title text-center mb-5">
                             <h2>Our Events</h2>
                         </div>
@@ -389,5 +392,15 @@
     <script>
         // Initialize AOS
         AOS.init();
+
+        // Event listener for when an animation starts
+        document.addEventListener('aos:in', ({ detail }) => {
+            document.body.classList.add('overflow-hidden');
+        });
+
+        // Event listener for when an animation ends
+        document.addEventListener('aos:out', ({ detail }) => {
+            document.body.classList.remove('overflow-hidden');
+        });
     </script>
 </html>
