@@ -1,339 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bali Pyro 2</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali Pyro 2</title>
 
-        <!-- CDN here -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-        />
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
+    <!-- CDN here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <!-- CSS here -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/services.css" />
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="header-area">
-            <div id="sticky-header" class="main-header-area">
-                <nav
-                    class="navbar sticky-top navbar-expand-lg navbar-dark"
-                    data-aos="fade-down"
-                >
-                    <div class="container">
-                        <a class="navbar-brand" href="index.html"
-                            ><img
-                                id="nav-brand"
-                                src="img/logo/logo-invert-transparent.png"
-                                alt=""
-                            />
-                            <h5>Illuminating Moments, Creating Memories</h5>
-                        </a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                            style="transition: 1s"
-                        >
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        aria-current="page"
-                                        href="index.html"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link active"
-                                        href="./services.html"
-                                        >Services</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./our_event.html"
-                                        >Our Event</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./about.html"
-                                        >About</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./inquiry.html"
-                                        >Inquiry</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-area">
+      <div id="sticky-header" class="main-header-area">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" data-aos="fade-down">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"
+              ><img id="nav-brand" src="img/logo/logo-invert-transparent.png" alt="" />
+              <h5>Illuminating Moments, Creating Memories</h5>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="transition: 1s">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./our_event.html">Our Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./inquiry.html">Inquiry</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="navbarFill" class="navbar-fill-space visually-hidden"></div>
+
+    <!-- Banner area -->
+    <section
+      class="services-banner mb-5 pt-4 pb-3"
+      style="background-image: url(https://dummyimage.com/wqxga/333333/525152)"
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="text-center mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+              Our Services
+            </h1>
+            <h3 class="text-center" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1200">
+              See what kind of services we offer for our customers!
+            </h3>
+          </div>
         </div>
-        <div id="navbarFill" class="navbar-fill-space visually-hidden"></div>
+      </div>
+    </section>
 
-        <!-- Banner area -->
-        <section
-            class="services-banner mb-5 pt-4 pb-3"
-            style="
-                background-image: url(https://dummyimage.com/wqxga/333333/525152);
-            "
+    <!--CONTENT-->
+    <section class="services-header mt-5 mb-5 pt-4 pb-3">
+      <div class="container-flex mt-5">
+        <div
+          class="row text-center justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="100"
         >
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-8">
-                        <h1
-                            class="text-center mb-4"
-                            data-aos="zoom-in"
-                            data-aos-duration="600"
-                            data-aos-delay="600"
-                        >
-                            Our Services
-                        </h1>
-                        <h3
-                            class="text-center"
-                            data-aos="zoom-in"
-                            data-aos-duration="600"
-                            data-aos-delay="1200"
-                        >
-                            See what kind of services we offer for our
-                            customers!
-                        </h3>
-                    </div>
-                </div>
+          <h1 class="text-center">What we offer</h1>
+        </div>
+        <div class="services-area bg-white mb-5 pt-5 pb-5">
+          <div class="row justify-content-center text-center px-5">
+            <!--Lighting-->
+            <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+              <div class="services-thumb mt-lg-4 rounded-3">
+                <img src="img/services-page/S__1630258.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="services-label mt-4">
+                <h5>LIGHTING</h5>
+              </div>
             </div>
-        </section>
+            <!--Genset-->
+            <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+              <div class="services-thumb mt-lg-4 rounded-3">
+                <img src="https://dummyimage.com/450x450/000/5e5e5e" alt="" class="img-fluid" />
+              </div>
+              <div class="services-label mt-4">
+                <h5>GENSET</h5>
+              </div>
+            </div>
+            <!--Sound-->
+            <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+              <div class="services-thumb mt-lg-4 rounded-3">
+                <img src="img/services-page/S__2523138.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="services-label mt-4">
+                <h5>SOUND</h5>
+              </div>
+            </div>
+            <!--LED Screen-->
+            <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+              <div class="services-thumb mt-lg-4 rounded-3">
+                <img src="img/services-page/S__1802243.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="services-label mt-4">
+                <h5>LED SCREEN</h5>
+              </div>
+            </div>
+            <!--Effects-->
+            <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+              <div class="services-thumb mt-lg-4 rounded-3">
+                <img src="img/services-page/S__1802242.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="services-label mt-4">
+                <h5>EFFECTS</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--CONTENT-->
-        <section class="services-header mt-5 mb-5 pt-4 pb-3">
-            <div class="container-flex mt-5">
-                <div
-                    class="row text-center justify-content-center"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-delay="100"
-                >
-                    <h1 class="text-center">What we offer</h1>
-                </div>
-                <div class="services-area bg-white mb-5 pt-5 pb-5">
-                    <div class="row justify-content-center text-center px-5">
-                        <!--Lighting-->
-                        <div
-                            class="col-md-6 col-lg-2"
-                            data-aos="fade-up"
-                            data-aos-duration="600"
-                            data-aos-delay="100"
-                        >
-                            <div class="services-thumb mt-lg-4 rounded-3">
-                                <img
-                                    src="img/services-page/S__1630258.jpg"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="services-label mt-4">
-                                <h5>LIGHTING</h5>
-                            </div>
-                        </div>
-                        <!--Genset-->
-                        <div
-                            class="col-md-6 col-lg-2"
-                            data-aos="fade-up"
-                            data-aos-duration="600"
-                            data-aos-delay="200"
-                        >
-                            <div class="services-thumb mt-lg-4 rounded-3">
-                                <img
-                                    src="https://dummyimage.com/450x450/000/5e5e5e"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="services-label mt-4">
-                                <h5>GENSET</h5>
-                            </div>
-                        </div>
-                        <!--Sound-->
-                        <div
-                            class="col-md-6 col-lg-2"
-                            data-aos="fade-up"
-                            data-aos-duration="600"
-                            data-aos-delay="300"
-                        >
-                            <div class="services-thumb mt-lg-4 rounded-3">
-                                <img
-                                    src="img/services-page/S__2523138.jpg"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="services-label mt-4">
-                                <h5>SOUND</h5>
-                            </div>
-                        </div>
-                        <!--LED Screen-->
-                        <div
-                            class="col-md-6 col-lg-2"
-                            data-aos="fade-up"
-                            data-aos-duration="600"
-                            data-aos-delay="400"
-                        >
-                            <div class="services-thumb mt-lg-4 rounded-3">
-                                <img
-                                    src="img/services-page/S__1802243.jpg"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="services-label mt-4">
-                                <h5>LED SCREEN</h5>
-                            </div>
-                        </div>
-                        <!--Effects-->
-                        <div
-                            class="col-md-6 col-lg-2"
-                            data-aos="fade-up"
-                            data-aos-duration="600"
-                            data-aos-delay="500"
-                        >
-                            <div class="services-thumb mt-lg-4 rounded-3">
-                                <img
-                                    src="img/services-page/S__1802242.jpg"
-                                    alt=""
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <div class="services-label mt-4">
-                                <h5>EFFECTS</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Footer start -->
+    <footer class="footer-area bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="footer-brand col-md-12 col-lg-4 col-xl-4 mx-auto mt-3 text-left">
+            <a class="footer-logo" href="index.html"><img src="img/logo/logo-alt-transparent.png" alt="" /></a>
+            <p class="footer-text">Get more information and other updates on our contact and social media</p>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn btn-link text-white" href=""><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-link text-white" href=""><i class="bi bi-envelope-at"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-link text-white" href=""><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-sitemap col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
+            <h5 class="footer-label">Sitemap</h5>
+            <p class="footer-nav">
+              <a href="#">Our Company</a>
+            </p>
+            <p class="footer-nav">
+              <a href="#">Our Services</a>
+            </p>
+            <p class="footer-nav">
+              <a href="#">Our Events</a>
+            </p>
+            <p class="footer-nav">
+              <a href="#">Send Inquiries</a>
+            </p>
+          </div>
+          <div class="footer-contact col-md-6 col-lg-4 col-xl-4 mx-auto mt-3 text-left">
+            <h5 class="footer-label">Contact</h5>
+            <div class="row">
+              <div class="col-2">
+                <p><i class="bi bi-telephone"></i></p>
+              </div>
+              <div class="col-10">
+                <p>+62 813-3930-7111</p>
+              </div>
             </div>
-        </section>
-
-        <!-- Footer start -->
-        <footer class="footer-area bg-dark text-white pt-5 pb-4">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="footer-brand col-md-12 col-lg-4 col-xl-4 mx-auto mt-3 text-left"
-                    >
-                        <a class="footer-logo" href="index.html"
-                            ><img
-                                src="img/logo/logo-alt-transparent.png"
-                                alt=""
-                        /></a>
-                        <p class="footer-text">
-                            Get more information and other updates on our
-                            contact and social media
-                        </p>
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn btn-link text-white" href=""
-                                    ><i class="bi bi-instagram"></i
-                                ></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-link text-white" href=""
-                                    ><i class="bi bi-envelope-at"></i
-                                ></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-link text-white" href=""
-                                    ><i class="bi bi-whatsapp"></i
-                                ></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div
-                        class="footer-sitemap col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 text-left"
-                    >
-                        <h5 class="footer-label">Sitemap</h5>
-                        <p class="footer-nav">
-                            <a href="#">Our Company</a>
-                        </p>
-                        <p class="footer-nav">
-                            <a href="#">Our Services</a>
-                        </p>
-                        <p class="footer-nav">
-                            <a href="#">Our Events</a>
-                        </p>
-                        <p class="footer-nav">
-                            <a href="#">Send Inquiries</a>
-                        </p>
-                    </div>
-                    <div
-                        class="footer-contact col-md-6 col-lg-4 col-xl-4 mx-auto mt-3 text-left"
-                    >
-                        <h5 class="footer-label">Contact</h5>
-                        <div class="row">
-                            <div class="col-2">
-                                <p><i class="bi bi-telephone"></i></p>
-                            </div>
-                            <div class="col-10">
-                                <p>+62 813-3930-7111</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p><i class="bi bi-envelope-at"></i></p>
-                            </div>
-                            <div class="col-10">
-                                <p>teddywirawan78@yahoo.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="col-2">
+                <p><i class="bi bi-envelope-at"></i></p>
+              </div>
+              <div class="col-10">
+                <p>teddywirawan78@yahoo.com</p>
+              </div>
             </div>
-        </footer>
-        <!-- Footer end -->
-    </body>
-    <!-- Script here -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"
-    ></script>
-    <script src="js/header.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </body>
+  <!-- Script here -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/header.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
 </html>

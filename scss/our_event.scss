@@ -9,164 +9,164 @@ $red: #e81828;
 
 // Darken primary colors
 $darken-red: darken(
-    $color: #e81828,
-    $amount: 10,
+  $color: #e81828,
+  $amount: 10
 );
 
 .our-event-banner {
-    font-family: "Barlow", sans-serif;
-	font-weight: 900;
-	background: no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll;
-    background-color: #474a4c;
-	margin-top: -120px;
-	letter-spacing: 2px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #474a4c;
+  margin-top: -120px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the overlay darker or lighter */
+    z-index: -1;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+  }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the overlay darker or lighter */
-        z-index: -1;
-    }
+  h1 {
+    font-size: 55px;
+    color: white; /* Use the actual color value instead of a variable */
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
 
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        position: relative;
-        z-index: 2;
-    }
-
-    h1 {
-        font-size: 55px;
-        color: white; /* Use the actual color value instead of a variable */
-        text-transform: uppercase;
-        position: relative;
-        z-index: 2;
-    }
-
-    h3 {
-        font-family: "Nunito", sans-serif;
-        font-size: 30px;
-        color: white; /* Use the actual color value instead of a variable */
-        position: relative;
-        z-index: 2;
-    }
+  h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: white; /* Use the actual color value instead of a variable */
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .slider-area {
-    font-family: "Barlow", sans-serif;
-    font-weight: 900;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
 
-    .carousel-item {
-        height: 200px; // Adjusted height
-        min-height: 200px; // Adjusted min-height
+  .carousel-item {
+    height: 200px; // Adjusted height
+    min-height: 200px; // Adjusted min-height
+  }
+
+  .carousel-inner {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
     }
 
-    .carousel-inner {
-        position: relative;
-
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 1;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            max-height: 200px; // Adjusted max-height
-            width: 100%;
-        }
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px; // Adjusted max-height
+      width: 100%;
     }
+  }
 }
 
 .our-event {
-    margin-top: 150px;
-    margin-bottom: 150px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 
-    .row {
-        border-radius: 10px;
+  .row {
+    border-radius: 10px;
 
-        @media (min-width: 769px) and (max-width: 992px) {
-            width: 600px;
-            transform: translateX(10%);
-        }
-
-        @media (max-width: 768px) {
-            padding-bottom: 45px;
-        }
+    @media (min-width: 769px) and (max-width: 992px) {
+      width: 600px;
+      transform: translateX(10%);
     }
 
-    .our-event-carousel-text {
-        dt {
-            font-family: "Nunito", sans-serif;
-            font-weight: 600;
-            color: $red;
-        }
+    @media (max-width: 768px) {
+      padding-bottom: 45px;
+    }
+  }
 
-        font-family: "Nunito", sans-serif;
-        font-size: 24px;
-        justify-content: center;
-        text-align: center;
+  .our-event-carousel-text {
+    dt {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      color: $red;
     }
 
-    .carousel {
-        transform: translateX(-7%);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        width: 600px;
-        height: auto;
-        overflow: hidden;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+  }
 
-        @media (min-width: 993px) and (max-width: 1400px) {
-            transform: translateX(-8%);
-            width: fit-content;
-        }
+  .carousel {
+    transform: translateX(-7%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
 
-        @media (min-width: 769px) and (max-width: 992px) {
-            transform: none;
-            border-radius: 20px 20px 0px 0px;
-            width: 600px;
-            transform: translateX(-19%);
-        }
-
-        @media (max-width: 768px) {
-            transform: none;
-            border-radius: 20px 20px 0px 0px;
-            width: fit-content;
-            margin-left: -12px;
-            margin-right: -12px;
-        }
+    @media (min-width: 993px) and (max-width: 1400px) {
+      transform: translateX(-8%);
+      width: fit-content;
     }
 
-    .carousel-item {
-        img {
-            float: left;
-            width: 640px;
-            height: 480px;
-            object-fit: cover;
-        }
+    @media (min-width: 769px) and (max-width: 992px) {
+      transform: none;
+      border-radius: 20px 20px 0px 0px;
+      width: 600px;
+      transform: translateX(-19%);
     }
 
-    table {
-        text-align: left;
-
-        @media only screen and (max-width: 992px) {
-            font-size: smaller;
-        }
+    @media (max-width: 768px) {
+      transform: none;
+      border-radius: 20px 20px 0px 0px;
+      width: fit-content;
+      margin-left: -12px;
+      margin-right: -12px;
     }
+  }
+
+  .carousel-item {
+    img {
+      float: left;
+      width: 640px;
+      height: 480px;
+      object-fit: cover;
+    }
+  }
+
+  table {
+    text-align: left;
+
+    @media only screen and (max-width: 992px) {
+      font-size: smaller;
+    }
+  }
 }

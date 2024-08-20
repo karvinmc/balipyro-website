@@ -9,108 +9,108 @@ $red: #e81828;
 
 // Darken primary colors
 $darken-red: darken(
-    $color: #e81828,
-    $amount: 10,
+  $color: #e81828,
+  $amount: 10
 );
 
 .inquiry-banner {
-    font-family: "Barlow", sans-serif;
-	font-weight: 900;
-	background: no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll;
-    background-color: #474a4c;
-	margin-top: -120px;
-	letter-spacing: 2px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #474a4c;
+  margin-top: -120px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the overlay darker or lighter */
+    z-index: -1;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+  }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the overlay darker or lighter */
-        z-index: -1;
-    }
+  h1 {
+    font-size: 55px;
+    color: white; /* Use the actual color value instead of a variable */
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
 
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        position: relative;
-        z-index: 2;
-    }
-
-    h1 {
-        font-size: 55px;
-        color: white; /* Use the actual color value instead of a variable */
-        text-transform: uppercase;
-        position: relative;
-        z-index: 2;
-    }
-
-    h3 {
-        font-family: "Nunito", sans-serif;
-        font-size: 30px;
-        color: white; /* Use the actual color value instead of a variable */
-        position: relative;
-        z-index: 2;
-    }
+  h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: white; /* Use the actual color value instead of a variable */
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .inquiry-area {
-    .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  // .inquiry-title {
+  // 	h5 {
+  // 		font-family: "Barlow", sans-serif;
+  // 		font-size: 30px;
+  // 		text-transform: uppercase;
+  // 		letter-spacing: 2px;
+  // 	}
+  // }
+
+  .inquiry-slogan {
+    h2 {
+      font-family: "Barlow", sans-serif;
+      font-size: 35px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  .contact-form {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .inquiry-btn {
+    button {
+      font-size: 20px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      padding: 12px;
+      background-color: $red;
+      border-color: $red;
+      font-weight: bold;
     }
 
-    // .inquiry-title {
-    // 	h5 {
-    // 		font-family: "Barlow", sans-serif;
-    // 		font-size: 30px;
-    // 		text-transform: uppercase;
-    // 		letter-spacing: 2px;
-    // 	}
-    // }
-
-    .inquiry-slogan {
-        h2 {
-            font-family: "Barlow", sans-serif;
-            font-size: 35px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+    button:hover {
+      background-color: $darken-red;
     }
+  }
 
-    .contact-form {
-        font-family: "Nunito", sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-    }
-
-    .inquiry-btn {
-        button {
-            font-size: 20px;
-            text-transform: uppercase;
-            border-radius: 10px;
-            padding: 12px;
-            background-color: $red;
-            border-color: $red;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background-color: $darken-red;
-        }
-    }
-
-	.inquiry-map {
-		overflow: hidden;
-		display: flex;
-	}
+  .inquiry-map {
+    overflow: hidden;
+    display: flex;
+  }
 }
