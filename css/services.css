@@ -56,3 +56,17 @@
 .services-thumb:hover {
   transform: scale(1.05);
 }/*# sourceMappingURL=services.css.map */
+
+.square-image-container {
+  width: 150px;  /* Adjust the size as needed */
+  height: 150px; /* Keeps the image square */
+  overflow: hidden; /* Ensures image does not overflow */
+  margin: 0 auto; /* Centers the image */
+}
+
+.square-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps the aspect ratio and fills the container */
+  border-radius: 8px; /* Optional: Keeps the rounded corners */
+}
